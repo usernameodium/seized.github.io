@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Seized</title>
+      <link href="css/core.css" rel="stylesheet">
+      <link href="css/animate.css" rel="stylesheet">
+      <link rel="shortcut icon" href="fav.ico" type="image/x-icon">
+      <script src="js/a5e30dd034.js"></script>
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/modernizr.custom.js"></script>
+      <script src="js/plugins.min.js"></script>
+      <script src="js/main.js"></script>
+      <style>@font-face{font-family:Pompadur;src:url(fonts/font.eot);src:local(pompadur),url(fonts/font.ttf);}h1{font-family:Pompadur,'Comic Sans MS',cursive;}</style>
+      <script> 
+         document.onkeydown = function(e) { 
+         if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly. 
+         } 
+         return false; 
+         }; 
+      </script>
+      <script> 
+         function click() { 
+         if (event.button==2||event.button==3) { 
+         oncontextmenu='return false'; 
+         } 
+         } 
+         document.onmousedown=click 
+         document.oncontextmenu = new Function("return false;") 
+      </script>
+      <script>
+         function disableWheelScroll(){
+         if (document.body.addEventListener) document.body.addEventListener('DOMMouseScroll', blockWheel, false);
+         document.body.onmousewheel = blockWheel;
+         }
+         function blockWheel(event){
+         if (!event) event = window.event;
+         if (event.stopPropagation) event.stopPropagation();
+         else event.cancelBubble = true;
+         if(event.preventDefault) event.preventDefault();
+         else event.returnValue = false;
+         }
+         disableWheelScroll();
+      </script>
+   </head>
+   <body onmousedown="return false" onselectstart="return false">
+      <style>body{overflow:hidden}</style>
+      <script>disableWheelScroll();</script>
+      <div id="star" class="video mask overlay">
+           <div class="video-fallback"></div>
+        <iframe width="1920" height="1080" src="https://www.youtube.com/embed/9O_XgUdZCiE?controls=0&showinfo=0&rel=0&autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>
+         <canvas class="cover"></canvas>
+      </div>
+      <div class="pageoverlay">
+         <div class="lightbox">
+            <div class="awrapper">
+               <div class="titles fadeInDown">
+                  <div class="media fadeInUp">
+                  <a href="https://www.youtube.com/channel/UCjemc6JMRd5GjzFKQr742aw" target="_blank">
+                  <i class="fa fa-youtube" aria-hidden="true"></i>
+                   <a href="https://discord.gg/BteuY3x" target="_blank">
+                  <i class="fa fa-commenting" aria-hidden="true"></i>
+                  </a>
+               </div>
+               <h1>
+                <a href="http://steamcommunity.com/id/Childlike"> Childlike</a>   
+               </h1>
+			      <h1>
+                     <a href="http://steamcommunity.com/id/frostthedurk/">  Frost</a> <a href="http://steamcommunity.com/id/LeadKiller/"> LeadKiller</a><a href="http://steamcommunity.com/id/itsNade/">  Chase</a>
+                  </h1>
+            <h2>
+             <a href="http://seized.team/autism">Autism Wall</a><br>
+            </h2>
+			<div class="media fadeInUp">
+               </div>
+				  <h2>
+			Shoutouts
+			  <h4>
+             <marquee width="500" style="text-align:center;"><a href="http://steamcommunity.com/id/MalariaMike/">Mike</a>, <a href="http://steamcommunity.com/id/legendofrobbo/">LegendofRobbo</a>, <a href="http://steamcommunity.com/id/anubis_revived/">Anubis</a>, <a href="http://steamcommunity.com/profiles/76561198107872415">HGC</a>, <a href="http://steamcommunity.com/id/TechhCunt/">Niku</a></marquee>
+			 <br><br><marquee width="500" style="text-align:center;">Dumped and Released by Grampa @ Citizenhack.me</marquee>
+			 <br><marquee width="500" style="text-align:center;font-size:69%;color:#aaaaaa;">i'm sure there <i>was</i> an advantage to disabling inspect element, but for the life of me, i just don't see it</marquee>
+			 </h4>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
